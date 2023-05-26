@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700;800;900&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Poppins;
+}
+
+.navbar {
+  background: radial-gradient(
+    circle at 10% 30%,
+    rgb(90, 92, 106) 8%,
+    rgb(32, 45, 58) 81.3%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  height: 100%;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  font-family: poppins;
+  font-size: 16Spx;
+  font-weight: 600;
+  text-shadow: 0, 0, 0, 10px;
+  transition: 0.5s;
+}
+.navbar .menu a:hover {
+  color: #fc0160;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.navbar .action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.navbar .action .fa-solid {
+  border: 2px solid #fc0160;
+  background-color: #fc0160;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 5px;
+  font-size: 14px;
+}
+
+/* banner kısmı */
+.banner {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  padding: 90px 0 20px 50px;
+}
+
+.banner .ban-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.banner .ban-left h1 {
+  font-family: Poppins;
+  font-size: 50px;
+}
+
+.banner .ban-left h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.banner .ban-left p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner .ban-left .button {
+  background-color: #490b26;
+  color: white;
+  border-radius: 10px;
+  padding: 0 0 0 5px;
+  margin-top: 10px;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.banner .ban-left .button a {
+  text-decoration: none;
+}
+.banner .ban-left .button i {
+  background-color: #940041;
+  padding: 10px;
+  border-radius: 10px;
+}
+.banner .ban-left .button:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.banner .ban-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* product */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 50px;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8) 80%, black),
+    url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+}
+.product h1 {
+  margin-bottom: 50px;
+}
+.product h1 span {
+  color: #fc0160;
+}
+
+.product .cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.card img {
+  width: 230px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product .cards .card:hover {
+  transform: translate(-10px, -3px);
+  transition: ease 0.7s;
+}
+
+.product .cards .card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #940041;
+  padding: 10px;
+}
+
+.card-content-text span {
+  font-size: larger;
+  font-weight: 600;
+}
+.product .cards .card-content .btn button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product .cards .card-process {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #940041;
+  border-radius: 0 0 10px 10px;
+  padding: 5px;
+}
+
+/* about kısmı */
+
+.about {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8) 70%, black),
+    url(images/back.png);
+}
+
+.about-cards {
+  display: flex;
+  align-items: center;
+}
+
+.about h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.about span {
+  color: #fc0160;
+}
+
+.about-cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.about-card h3 {
+  color: #fc0160;
+}
+
+/* sponsorlar */
+
+.sponsor {
+  background-color: black;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.sponsor h1 {
+  margin-bottom: 20px;
+}
+
+.sponsor span {
+  color: #fc0160;
+}
+
+.sponsor img {
+  padding: 10px;
+  margin: 5px;
+}
+
+.sponsor img:nth-child(2n) {
+  background-color: #141b22;
+}
+
+/* footer */
+
+.footer {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  display: flex;
+  gap: 50px;
+  color: white;
+  padding: 50px 50px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+}
+
+.footer-left .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left .social {
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+.footer-left .social i {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer-left .social i:hover {
+  transform: scale(1.2);
+  color: #fc0160;
+  transition: 0.5s;
+}
+
+.footer-right {
+  display: flex;
+  margin-left: 200px;
+  justify-content: space-between;
+}
+
+.footer-right ul {
+  margin-right: 100px;
+  list-style: none;
+}
+
+.footer-right ul li:nth-child(1) {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-right ul li {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.footer-right ul li:hover {
+  color: #fc0160;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .action {
+    display: none;
+  }
+  .navbar .menu {
+    display: none;
+  }
+
+  .footer-right {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
+  }
+}
